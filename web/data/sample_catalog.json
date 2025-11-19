@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Fantastic Four #3",
+    "series": "Fantastic Four",
+    "series_index": 3,
+    "authors": ["Stan Lee", "Jack Kirby"],
+    "publisher": "Marvel",
+    "pubdate": "1962-03-01",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9c/Fantastic_Four_3.jpg",
+    "timestamp": "1961-11-01T00:00:00",
+    "tags": ["经典", "团队", "宇宙冒险"],
+    "formats": ["CBR", "PDF"],
+    "comments": "本期中，神奇四侠对抗神秘的 Miracle Man，并首次展示 Fantasticar。",
+    "calibre_id": 101,
+    "path": "Fantastic Four (1961)"
+  },
+  {
+    "id": 2,
+    "title": "Amazing Spider-Man Annual #1",
+    "series": "Amazing Spider-Man",
+    "series_index": 1,
+    "authors": ["Stan Lee", "Steve Ditko"],
+    "publisher": "Marvel",
+    "pubdate": "1964-07-01",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/2/20/Amazing_Spider-Man_Annual_Vol_1_1.jpg",
+    "timestamp": "1964-07-15T00:00:00",
+    "tags": ["蜘蛛侠", "复仇者联盟"],
+    "formats": ["CBZ"],
+    "comments": "蜘蛛侠试图加入复仇者联盟，却被安排完成一个危险的考核。",
+    "calibre_id": 102,
+    "path": "Amazing Spider-Man Annual"
+  },
+  {
+    "id": 3,
+    "title": "X-Men #1",
+    "series": "X-Men",
+    "series_index": 1,
+    "authors": ["Stan Lee", "Jack Kirby"],
+    "publisher": "Marvel",
+    "pubdate": "1963-09-01",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/a8/X-Men_%281963%29_1.jpg",
+    "timestamp": "1963-09-10T00:00:00",
+    "tags": ["X战警", "变种人"],
+    "formats": ["PDF"],
+    "comments": "初代 X 战警登场，对抗万磁王领导的变种人兄弟会。",
+    "calibre_id": 103,
+    "path": "X-Men (1963)"
+  }
+]
