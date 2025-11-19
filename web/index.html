@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calibre 漫画库 · Marvel 示例</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Calibre 漫画库</h1>
+        <p class="subtitle">
+          通过 Calibre 书库 (`I:\\Marvel comic\\comics`) 自动生成的前端展示。
+        </p>
+      </div>
+      <div class="header-actions">
+        <button id="refreshButton" class="ghost">刷新 Calibre 数据</button>
+        <a class="primary" href="data/sample_catalog.json" download
+          >下载示例数据</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="filters">
+        <label>
+          <span>搜索（标题 / 作者 / 系列）</span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="例如：Fantastic Four"
+            autocomplete="off"
+          />
+        </label>
+
+        <label>
+          <span>标签</span>
+          <select id="tagFilter">
+            <option value="">全部</option>
+          </select>
+        </label>
+
+        <label>
+          <span>出版社</span>
+          <select id="publisherFilter">
+            <option value="">全部</option>
+          </select>
+        </label>
+
+        <label>
+          <span>排序</span>
+          <select id="sortSelect">
+            <option value="recent">最近导入</option>
+            <option value="series">系列顺序</option>
+            <option value="title">标题</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="stats" aria-live="polite">
+        <div>
+          <strong id="totalCount">0</strong>
+          <span>本漫画</span>
+        </div>
+        <div>
+          <strong id="seriesCount">0</strong>
+          <span>条系列</span>
+        </div>
+        <div>
+          <strong id="latestImport">-</strong>
+          <span>最近导入</span>
+        </div>
+      </section>
+
+      <section class="grid" id="comicGrid" aria-live="polite"></section>
+    </main>
+
+    <aside class="drawer" id="detailDrawer" aria-hidden="true">
+      <button class="close" id="drawerClose">×</button>
+      <div id="drawerContent"></div>
+    </aside>
+
+    <template id="comicCardTemplate">
+      <article class="comic-card">
+        <div class="cover-wrapper">
+          <img alt="封面" loading="lazy" />
+        </div>
+        <div class="meta">
+          <p class="series"></p>
+          <h3 class="title"></h3>
+          <p class="authors"></p>
+          <p class="tags"></p>
+          <button class="ghost">详情</button>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
